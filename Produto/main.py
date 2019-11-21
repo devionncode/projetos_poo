@@ -1,4 +1,5 @@
 from produto_regra import ProdutoRegra
+from produto_banco import ProdutoBanco
 
 def mostrar_menu():
     print('1 - Cadastrar')
@@ -25,7 +26,7 @@ def main():
     while opcao_retornada != 0:
 
         opcao_retornada = mostrar_menu()
-
+        ProdutoBanco()
         if opcao_retornada == 1:
             produto_regra.cadastrar()
         elif opcao_retornada == 2:
